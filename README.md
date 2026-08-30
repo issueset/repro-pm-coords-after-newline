@@ -35,34 +35,21 @@ pnpm run probe:all
 2. Click into the code block and walk the caret with the arrow keys; the empty line between `y` and `}` is the clearest spot.
 3. Compare the two carets: the native caret marks the correct position, and the orange bar is drawn at `view.coordsAtPos(head)`.
 
-On an affected build (every shipping Safari as of 2026-08), the orange bar sits at the end of the previous line at every soft line start; on a fixed build (Safari Technology Preview), it tracks the native caret everywhere.
+On an affected build (every shipping Safari as of 2026-08), the orange bar sits at the end of the previous line at every soft line start; on a fixed build (Safari Technology Preview) and in non-WebKit browsers (Chrome), it tracks the native caret everywhere.
 
 ### Recordings
-
-<!-- Replace each _pending_ with the browser version and the uploaded recording; add one bullet per browser/version tested. -->
 
 - Safari (stable) Version 26.5.2 (21624.2.5.11.8):
 
   https://github.com/user-attachments/assets/8f2c7149-1b32-49df-a315-6971edf41fe1
 
-
-
-- Safari Technology Preview: Release 248 (WebKit 21625.1.24.19.2):
-
-  
+- Safari Technology Preview Release 248 (WebKit 21625.1.24.19.2):
 
   https://github.com/user-attachments/assets/98219aa1-0b3f-48a0-9dbf-74d8bf408cc4
 
-
-
-- Chrome 
-  Version 151.0.7922.174
-
-  
+- Chrome Version 151.0.7922.174:
 
   https://github.com/user-attachments/assets/2fa24ffa-41d4-4760-aa91-e54381c7a27d
-
-
 
 ## Results
 
