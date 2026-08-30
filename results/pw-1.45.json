@@ -1,0 +1,234 @@
+{
+  "playwrightVersion": "1.45.0",
+  "webkitVersion": "17.4",
+  "bugReproduced": true,
+  "conclusion": "BUG: for a position at the start of a soft line (right after a literal \"\\n\" in a white-space:pre code block), this WebKit returns a spurious leading zero-width client rect at the end of the PREVIOUS line for the character range prosemirror-view measures, and view.coordsAtPos(pos, 1) picks that first rect, so it reports the previous line. Both candidate fixes measure every position correctly.",
+  "codeText": "{\n  x\n  y\n\n}",
+  "lineGrid": {
+    "firstLineTop": 66,
+    "lineHeight": 16
+  },
+  "summary": {
+    "raw": {
+      "correct": 0,
+      "total": 4,
+      "ok": false
+    },
+    "patchedSingleRect": {
+      "correct": 4,
+      "total": 4,
+      "ok": true
+    },
+    "validatedStrategy": {
+      "correct": 4,
+      "total": 4,
+      "ok": true
+    }
+  },
+  "positions": [
+    {
+      "pos": 9,
+      "offset": 2,
+      "lineIndex": 1,
+      "lineText": "  x",
+      "expectedTop": 82,
+      "previousLineTop": 66,
+      "raw": {
+        "left": 40,
+        "top": 66,
+        "bottom": 82
+      },
+      "charRangeClientRects": [
+        {
+          "left": 40,
+          "top": 66,
+          "width": 0,
+          "height": 16
+        },
+        {
+          "left": 32,
+          "top": 82,
+          "width": 9,
+          "height": 16
+        }
+      ],
+      "collapsedRangeClientRects": [
+        {
+          "left": 32,
+          "top": 82,
+          "width": 0,
+          "height": 16
+        }
+      ],
+      "patchedSingleRect": {
+        "left": 32,
+        "top": 82,
+        "bottom": 98
+      },
+      "validatedStrategy": {
+        "source": "collapsed range",
+        "left": 32,
+        "top": 82,
+        "bottom": 98
+      },
+      "verdicts": {
+        "raw": "bug: previous line",
+        "patchedSingleRect": "ok",
+        "validatedStrategy": "ok"
+      }
+    },
+    {
+      "pos": 13,
+      "offset": 6,
+      "lineIndex": 2,
+      "lineText": "  y",
+      "expectedTop": 98,
+      "previousLineTop": 82,
+      "raw": {
+        "left": 57,
+        "top": 82,
+        "bottom": 98
+      },
+      "charRangeClientRects": [
+        {
+          "left": 57,
+          "top": 82,
+          "width": 0,
+          "height": 16
+        },
+        {
+          "left": 32,
+          "top": 98,
+          "width": 9,
+          "height": 16
+        }
+      ],
+      "collapsedRangeClientRects": [
+        {
+          "left": 32,
+          "top": 98,
+          "width": 0,
+          "height": 16
+        }
+      ],
+      "patchedSingleRect": {
+        "left": 32,
+        "top": 98,
+        "bottom": 114
+      },
+      "validatedStrategy": {
+        "source": "collapsed range",
+        "left": 32,
+        "top": 98,
+        "bottom": 114
+      },
+      "verdicts": {
+        "raw": "bug: previous line",
+        "patchedSingleRect": "ok",
+        "validatedStrategy": "ok"
+      }
+    },
+    {
+      "pos": 17,
+      "offset": 10,
+      "lineIndex": 3,
+      "lineText": "",
+      "expectedTop": 114,
+      "previousLineTop": 98,
+      "raw": {
+        "left": 57,
+        "top": 98,
+        "bottom": 114
+      },
+      "charRangeClientRects": [
+        {
+          "left": 57,
+          "top": 98,
+          "width": 0,
+          "height": 16
+        },
+        {
+          "left": 32,
+          "top": 114,
+          "width": 0,
+          "height": 16
+        }
+      ],
+      "collapsedRangeClientRects": [
+        {
+          "left": 32,
+          "top": 114,
+          "width": 0,
+          "height": 16
+        }
+      ],
+      "patchedSingleRect": {
+        "left": 32,
+        "top": 114,
+        "bottom": 130
+      },
+      "validatedStrategy": {
+        "source": "collapsed range",
+        "left": 32,
+        "top": 114,
+        "bottom": 130
+      },
+      "verdicts": {
+        "raw": "bug: previous line",
+        "patchedSingleRect": "ok",
+        "validatedStrategy": "ok"
+      }
+    },
+    {
+      "pos": 18,
+      "offset": 11,
+      "lineIndex": 4,
+      "lineText": "}",
+      "expectedTop": 130,
+      "previousLineTop": 114,
+      "raw": {
+        "left": 32,
+        "top": 114,
+        "bottom": 130
+      },
+      "charRangeClientRects": [
+        {
+          "left": 32,
+          "top": 114,
+          "width": 0,
+          "height": 16
+        },
+        {
+          "left": 32,
+          "top": 130,
+          "width": 8.4,
+          "height": 16
+        }
+      ],
+      "collapsedRangeClientRects": [
+        {
+          "left": 32,
+          "top": 130,
+          "width": 0,
+          "height": 16
+        }
+      ],
+      "patchedSingleRect": {
+        "left": 32,
+        "top": 130,
+        "bottom": 146
+      },
+      "validatedStrategy": {
+        "source": "collapsed range",
+        "left": 32,
+        "top": 130,
+        "bottom": 146
+      },
+      "verdicts": {
+        "raw": "bug: previous line",
+        "patchedSingleRect": "ok",
+        "validatedStrategy": "ok"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "editor",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "prosemirror-model": "^1.25.3",
+    "prosemirror-state": "^1.4.3",
+    "prosemirror-view": "^1.42.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.0"
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "playwrightVersion": "1.62.1",
+  "webkitVersion": "26.5",
+  "bugReproduced": false,
+  "conclusion": "No bug on this engine: Range.getClientRects() no longer reports the spurious previous-line rect (fixed in the WebKit 26.4 development cycle); both candidate fixes stay correct.",
+  "codeText": "{\n  x\n  y\n\n}",
+  "lineGrid": {
+    "firstLineTop": 66,
+    "lineHeight": 16
+  },
+  "summary": {
+    "raw": {
+      "correct": 4,
+      "total": 4,
+      "ok": true
+    },
+    "patchedSingleRect": {
+      "correct": 4,
+      "total": 4,
+      "ok": true
+    },
+    "validatedStrategy": {
+      "correct": 4,
+      "total": 4,
+      "ok": true
+    }
+  },
+  "positions": [
+    {
+      "pos": 9,
+      "offset": 2,
+      "lineIndex": 1,
+      "lineText": "  x",
+      "expectedTop": 82,
+      "previousLineTop": 66,
+      "raw": {
+        "left": 32,
+        "top": 82,
+        "bottom": 98
+      },
+      "charRangeClientRects": [
+        {
+          "left": 32,
+          "top": 82,
+          "width": 9,
+          "height": 16
+        }
+      ],
+      "collapsedRangeClientRects": [
+        {
+          "left": 32,
+          "top": 82,
+          "width": 0,
+          "height": 16
+        }
+      ],
+      "patchedSingleRect": {
+        "left": 32,
+        "top": 82,
+        "bottom": 98
+      },
+      "validatedStrategy": {
+        "source": "coordsAtPos side 1",
+        "left": 32,
+        "top": 82,
+        "bottom": 98
+      },
+      "verdicts": {
+        "raw": "ok",
+        "patchedSingleRect": "ok",
+        "validatedStrategy": "ok"
+      }
+    },
+    {
+      "pos": 13,
+      "offset": 6,
+      "lineIndex": 2,
+      "lineText": "  y",
+      "expectedTop": 98,
+      "previousLineTop": 82,
+      "raw": {
+        "left": 32,
+        "top": 98,
+        "bottom": 114
+      },
+      "charRangeClientRects": [
+        {
+          "left": 32,
+          "top": 98,
+          "width": 9,
+          "height": 16
+        }
+      ],
+      "collapsedRangeClientRects": [
+        {
+          "left": 32,
+          "top": 98,
+          "width": 0,
+          "height": 16
+        }
+      ],
+      "patchedSingleRect": {
+        "left": 32,
+        "top": 98,
+        "bottom": 114
+      },
+      "validatedStrategy": {
+        "source": "coordsAtPos side 1",
+        "left": 32,
+        "top": 98,
+        "bottom": 114
+      },
+      "verdicts": {
+        "raw": "ok",
+        "patchedSingleRect": "ok",
+        "validatedStrategy": "ok"
+      }
+    },
+    {
+      "pos": 17,
+      "offset": 10,
+      "lineIndex": 3,
+      "lineText": "",
+      "expectedTop": 114,
+      "previousLineTop": 98,
+      "raw": {
+        "left": 32,
+        "top": 114,
+        "bottom": 130
+      },
+      "charRangeClientRects": [
+        {
+          "left": 32,
+          "top": 114,
+          "width": 0,
+          "height": 16
+        }
+      ],
+      "collapsedRangeClientRects": [
+        {
+          "left": 32,
+          "top": 114,
+          "width": 0,
+          "height": 16
+        }
+      ],
+      "patchedSingleRect": {
+        "left": 32,
+        "top": 114,
+        "bottom": 130
+      },
+      "validatedStrategy": {
+        "source": "coordsAtPos side 1",
+        "left": 32,
+        "top": 114,
+        "bottom": 130
+      },
+      "verdicts": {
+        "raw": "ok",
+        "patchedSingleRect": "ok",
+        "validatedStrategy": "ok"
+      }
+    },
+    {
+      "pos": 18,
+      "offset": 11,
+      "lineIndex": 4,
+      "lineText": "}",
+      "expectedTop": 130,
+      "previousLineTop": 114,
+      "raw": {
+        "left": 32,
+        "top": 130,
+        "bottom": 146
+      },
+      "charRangeClientRects": [
+        {
+          "left": 32,
+          "top": 130,
+          "width": 8.4,
+          "height": 16
+        }
+      ],
+      "collapsedRangeClientRects": [
+        {
+          "left": 32,
+          "top": 130,
+          "width": 0,
+          "height": 16
+        }
+      ],
+      "patchedSingleRect": {
+        "left": 32,
+        "top": 130,
+        "bottom": 146
+      },
+      "validatedStrategy": {
+        "source": "coordsAtPos side 1",
+        "left": 32,
+        "top": 130,
+        "bottom": 146
+      },
+      "verdicts": {
+        "raw": "ok",
+        "patchedSingleRect": "ok",
+        "validatedStrategy": "ok"
+      }
+    }
+  ]
+}

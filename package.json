@@ -1,0 +1,9 @@
+{
+  "name": "pm-coords-after-newline-repro",
+  "private": true,
+  "scripts": {
+    "build": "pnpm --filter editor run build",
+    "probe:all": "pnpm run build && node run-all.mjs",
+    "serve": "pnpm run build && node serve.mjs"
+  }
+}

@@ -1,0 +1,6 @@
+packages:
+  - apps/*
+  - probes/*
+
+allowBuilds:
+  esbuild: true

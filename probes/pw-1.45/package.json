@@ -1,0 +1,11 @@
+{
+  "name": "probe-pw-1.45",
+  "private": true,
+  "scripts": {
+    "prepare": "PLAYWRIGHT_SKIP_BROWSER_GC=1 playwright install webkit",
+    "probe": "node probe.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.45.0"
+  }
+}
