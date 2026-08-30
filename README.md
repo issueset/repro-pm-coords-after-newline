@@ -47,13 +47,22 @@ On an affected build (every shipping Safari as of 2026-08), the orange bar sits 
 
 
 
-- Safari Technology Preview _pending_:
+- Safari Technology Preview: Release 248 (WebKit 21625.1.24.19.2):
 
-  _pending_
+  
 
-- Safari on iOS _pending_:
+  https://github.com/user-attachments/assets/98219aa1-0b3f-48a0-9dbf-74d8bf408cc4
 
-  _pending_
+
+
+- Chrome 
+  Version 151.0.7922.174
+
+  
+
+  https://github.com/user-attachments/assets/2fa24ffa-41d4-4760-aa91-e54381c7a27d
+
+
 
 ## Results
 
