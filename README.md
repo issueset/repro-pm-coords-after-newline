@@ -29,7 +29,23 @@ pnpm run probe:all
 
 `pnpm install` also downloads each probe's WebKit build (a `prepare` script per probe; `PLAYWRIGHT_SKIP_BROWSER_GC=1` stops the older `playwright install` versions from garbage-collecting each other's builds).
 
-To watch it instead of reading JSON: `pnpm run serve`, open the printed URL in an affected Safari, click into the code block, and walk the caret with the arrow keys; at every soft line start the orange `coordsAtPos` bar sits at the end of the previous line while the native caret is on the correct line.
+## Reproduce manually
+
+1. `pnpm install`, `pnpm run serve`, then open http://127.0.0.1:8940/ in the browser you want to test.
+2. Click into the code block and walk the caret with the arrow keys; the empty line between `y` and `}` is the clearest spot.
+3. Compare the two carets: the native caret marks the correct position, and the orange bar is drawn at `view.coordsAtPos(head)`.
+
+On an affected build (every shipping Safari as of 2026-08), the orange bar sits at the end of the previous line at every soft line start; on a fixed build (Safari Technology Preview), it tracks the native caret everywhere.
+
+### Recordings
+
+<!-- Replace each _pending_ cell with the browser version and the uploaded recording; add one row per browser/version tested. -->
+
+| Browser | Version | Verdict | Recording |
+| --- | --- | --- | --- |
+| Safari (stable) | _pending_ | _pending_ | _pending_ |
+| Safari Technology Preview | _pending_ | _pending_ | _pending_ |
+| Safari on iOS | _pending_ | _pending_ | _pending_ |
 
 ## Results
 
