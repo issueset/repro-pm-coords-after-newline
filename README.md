@@ -41,9 +41,11 @@ On an affected build (every shipping Safari as of 2026-08), the orange bar sits 
 
 <!-- Replace each _pending_ with the browser version and the uploaded recording; add one bullet per browser/version tested. -->
 
-- Safari (stable) _pending_:
+- Safari (stable) Version 26.5.2 (21624.2.5.11.8):
 
-  _pending_
+  https://github.com/user-attachments/assets/8f2c7149-1b32-49df-a315-6971edf41fe1
+
+
 
 - Safari Technology Preview _pending_:
 
