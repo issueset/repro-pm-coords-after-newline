@@ -39,13 +39,19 @@ On an affected build (every shipping Safari as of 2026-08), the orange bar sits 
 
 ### Recordings
 
-<!-- Replace each _pending_ cell with the browser version and the uploaded recording; add one row per browser/version tested. -->
+<!-- Replace each _pending_ with the browser version and the uploaded recording; add one bullet per browser/version tested. -->
 
-| Browser | Version | Verdict | Recording |
-| --- | --- | --- | --- |
-| Safari (stable) | _pending_ | _pending_ | _pending_ |
-| Safari Technology Preview | _pending_ | _pending_ | _pending_ |
-| Safari on iOS | _pending_ | _pending_ | _pending_ |
+- Safari (stable) _pending_:
+
+  _pending_
+
+- Safari Technology Preview _pending_:
+
+  _pending_
+
+- Safari on iOS _pending_:
+
+  _pending_
 
 ## Results
 
